@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lexend+Zetta:wght@200&display=swap" rel="stylesheet">
+
+    <title>Perfil</title>
+
+</head>
+<body>
+    <header>
+        <div class="degradado"></div>
+        <nav class="menu">
+            <ul>
+              <li><a href="#about">Acerca de</a></li>
+              <li><a href="#fotos">Fotos</a></li>
+              <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <div class="box-text">
+            <h1>Valeria Aguilera</h1>
+            <p>Estudiando</p>
+        </div>
+
+        <img class="perfil-img" src="img/Yeyo.jpg" alt="Foto de perfil">
+
+        <div class="about" id="about">
+            <h1 style="color: #22208C; font-size: 40px;">Acerca de</h1>
+            <p style="color: #3B3A3A; font-size: 32px;">
+                Soy <font color="#A3127A">Val</font> y me gusta 
+                <font color="#A3127A">programar</font> aunque no sepa que estoy
+                haciendo 
+            </p>
+        </div>
+    </header>
+
+    <div class="fotos" id="fotos" style="margin-top: 0%; padding-bottom: 50px;">
+        <h1 style="color: #3B3A3A; padding-top: 50px;">Fotos</h1>
+        
+            <div class="contenedor-imagenes">
+                <div class="contenedor-img">
+                    <img class="foto1" src="img/V y IU.png" alt="MV de IU">
+                    <p class="sub">Tejuino</p>
+                </div>
+                <div class="contenedor-img">
+                    <img class="foto2" src="img/colores.jpg" alt="Colores">
+                    <p class="sub">Colores</p>
+                </div>
+                <div class="contenedor-img">
+                    <img class="foto3" src="img/Nanami.jpg" alt="Nanami">
+                    <p class="sub">Nanami</p>
+                </div>
+                <div class="contenedor-img">
+                    <img class="foto4" src="img/Hands.jpg" alt="Colores">
+                    <p class="sub">Touch</p>
+                </div>
+            </div>
+
+            <div class="contenedor-imagenes">
+                <div class="contenedor-img">
+                    <img class="foto5" src="img/Mar.jpg" alt="Mar">
+                    <p class="sub">Mar</p>
+                </div>
+                <div class="contenedor-img">
+                    <img class="foto6" src="img/Eye.jpg" alt="ojo">
+                    <p class="sub">Purple</p>
+                </div>
+                <div class="contenedor-img">
+                    <img class="foto7" src="img/Girl.jpg" alt="Chica">
+                    <p class="sub">Iconic</p>
+                </div>
+                <div class="contenedor-img">
+                    <img class="foto8" src="img/Playa.jpg" alt="Playa">
+                    <p class="sub">Playa</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="title" id="Contacto">
+         <h2>Si me buscas, me encuentras</h2>       
+    </div>
+
+    <form action="procesar_formulario.php" method="post">
+        
+        <ul class="contact">
+           
+          <li class="tu">
+            <input style="width: 340px;" type="text" id="name" name="user_name" placeholder="  Nombre" />
+          </li>
+          <li class="tu">
+            <input style="width: 340px;" type="email" id="mail" name="user_mail" placeholder="  Correo electrónico" />
+          </li>          
+        </ul>
+        <ul class="contact">
+                <input type="Mensaje" id="mensa" name="Message" placeholder="  Mensaje" />
+        </ul>
+        <li class="button">
+            <button type="submit">Enviar</button>
+        </li>
+      </form>
+      
+
+    <footer>
+        <div class="degradado2"></div>
+        
+        <div class="redes">
+            <div class="red-box">
+                <img class="red1" src="img/instagram.svg" alt="Icono de instagram">
+            </div>
+            <div class="red-box">
+                <img class="red2" src="img/github.svg" alt="Icono de GitHub">
+            </div>
+            <div class="red-box">
+                <img class="red3" src="img/facebook.svg" alt="Icono de Facebook">
+            </div>
+            <div class="red-box">
+                <img class="red4" src="img/tiktok.svg" alt="Icono de Tiktok">
+            </div>            
+        </div>
+
+    </footer>
+    
+    
+</body>
+</html>
