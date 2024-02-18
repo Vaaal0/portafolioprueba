@@ -3,10 +3,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario
     $nombre = $_POST['user_name'];
     $correo = $_POST['user_mail'];
-    $mensaje = $_POST['user_message'];
+    $mensaje = $_POST['Message']; // Cambiado a 'Message' para que coincida con el name del campo
 
     // Destinatario y asunto
-    $para = "dhanyaguil15@gmail.com";
+    $para = "dhanyaguil15@gmail.com"; // Cambiar por tu dirección de correo electrónico
     $asunto = "Nuevo mensaje de formulario";
 
     // Construir el mensaje
@@ -18,11 +18,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cabeceras = "From: $correo";
 
     // Enviar el correo
-    mail($para, $asunto, $mensaje_completo, $cabeceras);
-
-
-	if(mail('tuEmail', $asunto, $mensaje)){
-		echo "Correo enviado";
-	}
+    if (mail($para, $asunto, $mensaje_completo, $cabeceras)) {
+        echo "Correo enviado";
+    } else {
+        echo "Error al enviar el correo";
+    }
 }
 ?>
+
