@@ -9,7 +9,7 @@ header {
     position: absolute;
     width: 100%;
     height: 80vh;
-    background-image: url('../img/fondo.png');
+    background-image: url('../img/fondo\ si.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -21,7 +21,7 @@ header {
     left: 0;
     width: 100%;
     height: 80vh;
-    background: linear-gradient(to bottom, rgba(188, 10, 105, 0.663) 0%, rgba(0, 65, 163, 0.405) 100%);
+    background: linear-gradient(to bottom, rgba(188, 10, 105, 0.562) 0%, rgba(0, 65, 163, 0.432) 100%);
 }
 
 .menu {
@@ -74,14 +74,14 @@ header {
 }
 
 h1{
-    font-size: 40px;
+    font-size: 3rem;
     font-family: "Lexend Exa", sans-serif;
     font-weight: 400;
 
 }
 
 p{
-    font-size: 20px;
+    font-size: 2rem;
     font-family: "Lexend Exa", sans-serif;
     font-weight: 400;
 
@@ -344,4 +344,10 @@ footer{
     justify-content: center;
     text-align: center;
 
+}
+
+@media only screen and (max-width: 768px) {
+    .demo-1 .main-title {
+        font-size: 3em;
+    }
 }

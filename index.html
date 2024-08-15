@@ -20,24 +20,29 @@
         <nav class="menu">
             <ul>
               <li><a href="#about">Acerca de</a></li>
-              <li><a href="#fotos">Fotos</a></li>
+              <li><a href="#fotos">Portafolio</a></li>
               <li><a href="#Contacto">Contacto</a></li>
             </ul>
         </nav>
         
         <div class="box-text">
             <h1>Valeria Aguilera</h1>
-            <p>Estudiando</p>
+            <p>Artista</p>
         </div>
 
-        <img class="perfil-img" src="img/Yeyo.jpg" alt="Foto de perfil">
+        <img class="perfil-img" src="img/Val.png" alt="Foto de perfil">
 
         <div class="about" id="about">
             <h1 style="color: #22208C; font-size: 40px;">Acerca de</h1>
             <p style="color: #3B3A3A; font-size: 32px;">
-                Soy <font color="#A3127A">Val</font> y me gusta 
-                <font color="#A3127A">programar</font> aunque no sepa que estoy
-                haciendo 
+                <font color="#A3127A">Valeria Aguilera</font> es una artista originaria de Toluca, México, que se especializa en la creación de obras
+                interactivas que fusionan el arte con la tecnología. Actualmente, cursa la carrera de Arte y
+                Comunicación Digitales en la Universidad Autónoma Metropolitana. Su trabajo se centra en la programación
+                con <font color="#A3127A">Arduino y la electrónica, así como en el diseño web,</font> buscando generar un impacto significativo en
+                los espectadores. Valeria se dedica a crear experiencias artísticas que invitan a la interacción,
+                desafiando las percepciones tradicionales del arte y fomentando un diálogo dinámico entre la obra y el
+                público.
+                 
             </p>
         </div>
     </header>
@@ -90,7 +95,7 @@
          <h2>Si me buscas, me encuentras</h2>       
     </div>
 
-    <form action="procesar_formulario.php" method="post">
+    <!-- <form action="procesar_formulario.php" method="post">
         
         <ul class="contact">
            
@@ -107,7 +112,7 @@
         <li class="button">
             <button type="submit">Enviar</button>
         </li>
-      </form>
+    </form> -->
       
 
     <footer>
@@ -138,6 +143,28 @@
         
     </footer>
     
-    
+    <script src="script.js"></script>
+    <script>
+        // Función para ajustar el tamaño de la letra
+        function adjustFontSize() {
+          var header = document.querySelector('header');
+          var windowWidth = window.innerWidth;
+      
+          // Ajusta el tamaño de la letra según el ancho de pantalla
+          if (windowWidth < 768) {
+            header.style.fontSize = '16px';
+          } else if (windowWidth < 1200) {
+            header.style.fontSize = '20px';
+          } else {
+            header.style.fontSize = '24px';
+          }
+        }
+      
+        // Llama a la función cuando se carga la página
+        window.onload = adjustFontSize;
+      
+        // Llama a la función cuando se redimensiona la ventana
+        window.onresize = adjustFontSize;
+      </script>
 </body>
 </html>
