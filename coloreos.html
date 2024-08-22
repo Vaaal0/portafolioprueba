@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acuarelas</title>
+    <title>Coloreos</title>
 
     <link href="styles/styleColoreos.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -19,22 +19,22 @@
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Deku & Aoyama.jpeg" /></div>
-                    <div class="photo__name">Kyoto</div>
+                    <div class="photo__name">D & A</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Hatsume.jpeg" /></div>
-                    <div class="photo__name">Halstatt</div>
+                    <div class="photo__name">Hatsume</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Himiko.png" /></div>
-                    <div class="photo__name">Peru</div>
+                    <div class="photo__name">Himiko</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Izuku.png" /></div>
-                    <div class="photo__name">Rio</div>
+                    <div class="photo__name">Izuku</div>
                 </div>
             </div>
         </div>
@@ -43,22 +43,22 @@
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Kirishima.png" /></div>
-                    <div class="photo__name">Italy</div>
+                    <div class="photo__name">Kirishima</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Midnight.jpg" /></div>
-                    <div class="photo__name">Osaka</div>
+                    <div class="photo__name">Midnight</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Naruto.jpeg" /></div>
-                    <div class="photo__name">Bali</div>
+                    <div class="photo__name">Naruto</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Nejire a.jpeg" /></div>
-                    <div class="photo__name">Paris</div>
+                    <div class="photo__name">Nejire</div>
                 </div>
             </div>
         </div>
@@ -67,22 +67,22 @@
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Nejire.png" /></div>
-                    <div class="photo__name">Cusco</div>
+                    <div class="photo__name">Nejire</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Ochako A.png" /></div>
-                    <div class="photo__name">Rome</div>
-                </div>
-                <div class="photo">
-                    <div class="photo__image"><img
-                            src="img/coloreos/Ochako.jpeg" /></div>
-                    <div class="photo__name">Paris</div>
+                    <div class="photo__name">Ochako</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
                             src="img/coloreos/Wild Wild Pussycats.jpeg" /></div>
-                    <div class="photo__name">Bali</div>
+                    <div class="photo__name">Cats</div>
+                </div>
+                <div class="photo">
+                    <div class="photo__image"><img
+                            src="img/coloreos/Ochako.jpeg" /></div>
+                    <div class="photo__name">Ochako</div>
                 </div>
             </div>
         </div>
@@ -90,27 +90,49 @@
              <div class="gallery__strip four">
                 <div class="photo">
                     <div class="photo__image"><img
-                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-milan.jpeg" /></div>
-                    <div class="photo__name">Milan</div>
+                            src="img/coloreos/Lady Nagant.jpg" /></div>
+                    <div class="photo__name">Lady Nagant</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
-                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-budapest.jpg" /></div>
-                    <div class="photo__name">Budapest</div>
+                            src="img/coloreos/Bakugo.jpg" /></div>
+                    <div class="photo__name">Bakugo</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
-                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-vienna.jpg" /></div>
-                    <div class="photo__name">Vienna</div>
+                            src="img/coloreos/Halloween.jpg" /></div>
+                    <div class="photo__name">Halloween</div>
                 </div>
                 <div class="photo">
                     <div class="photo__image"><img
-                            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/gg-mexico.jpg" /></div>
-                    <div class="photo__name">Mexico</div>
+                            src="img/coloreos/Midnight a.jpg" /></div>
+                    <div class="photo__name">Midnight</div>
                 </div>
-            </div> -->
+            </div> 
         </div>
     </div>
+    <div class="popup" id="imagePopup">
+        <span class="close" id="closePopup">&times;</span>
+        <img class="popup__image" id="popupImage" src="" alt="Imagen ampliada" />
+        <div class="popup__text" id="popupText"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('.photo').on('click', function() {
+                const imgSrc = $(this).find('img').attr('src');
+                const imgName = $(this).data('name');
+
+                $('#popupImage').attr('src', imgSrc);
+                $('#popupText').text(imgName);
+                $('#imagePopup').fadeIn();
+            });
+
+            $('#closePopup').on('click', function() {
+                $('#imagePopup').fadeOut();
+            });
+        });
+    </script>
 </body>
 
 </html>
