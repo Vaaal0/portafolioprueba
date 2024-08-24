@@ -133,13 +133,12 @@ p{
     background-color: #FFE8F9;
     text-align: center;
     position: absolute; /* Cambia a relativo para que los elementos internos se posicionen con respecto a este */
-    top: 300vh; /* Ajusta la distancia desde arriba según necesites */
+    top: 300%; /* Ajusta la distancia desde arriba según necesites */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%; /* Ajusta el ancho según necesites */
     height: auto;
 }
-
 
 .contenedor-imagenes {
     display: flex;
@@ -192,7 +191,7 @@ h2{
     transform: translateX(-50%);
     position: absolute;
     text-align: center;
-    top: 330%;
+    top: 390%;
     width: 100%; /* Ajustar el ancho al 100% para que abarque todo el ancho disponible */
     margin: 0; /* Eliminar cualquier margen para que el texto se ajuste al borde */
 }
@@ -202,7 +201,7 @@ form {
     margin: auto;
     width: auto;
     position: absolute;
-    top: 360%; /* Espacio entre el formulario y la parte superior */
+    top: 430%; /* Espacio entre el formulario y la parte superior */
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1em;
@@ -320,8 +319,9 @@ footer{
     background-color: rgba(0, 96, 208, 0.436);
     height: 270px;
     bottom: 0;
-    top: 400%;
+    top: 480%;
     width: 100%;
+    padding-bottom: 20px;
 
 }
 
@@ -331,6 +331,7 @@ footer{
     left: 0;
     width: 100%;
     height: 270px;
+    padding-bottom: 20px;
     background: linear-gradient(to bottom, rgba(255, 3, 137, 0.756) 0%, rgba(0, 65, 163, 0.405) 100%);
 }
 
@@ -345,6 +346,7 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-bottom: 20px;
 }
 
 .red-box {

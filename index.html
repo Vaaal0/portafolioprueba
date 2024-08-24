@@ -44,7 +44,8 @@
                 interactivas que fusionan el arte con la tecnología. Actualmente, cursa la carrera de Arte y
                 Comunicación Digitales en la Universidad Autónoma Metropolitana. Su trabajo se centra en cómputo físico
                 y diseño web buscando generar
-                un impacto significativo en los espectadores. Valeria se dedica a crear experiencias artísticas que invitan a la interacción,
+                un impacto significativo en los espectadores. Valeria se dedica a crear experiencias artísticas que
+                invitan a la interacción,
                 desafiando las percepciones tradicionales del arte y fomentando un diálogo dinámico entre la obra y el
                 público.
 
@@ -104,77 +105,76 @@
         <h2>Si me buscas, me encuentras</h2>
     </div>
 
-    <!-- <form action="procesar_formulario.php" method="post">
-        
+    <form action="https://formspree.io/f/mpwakpbg" method="post">
         <ul class="contact">
-           
-          <li class="tu">
-            <input style="width: 340px;" type="text" id="name" name="user_name" placeholder="  Nombre" />
-          </li>
-          <li class="tu">
-            <input style="width: 340px;" type="email" id="mail" name="user_mail" placeholder="  Correo electrónico" />
-          </li>          
+            <li class="tu">
+                <input style="width: 340px;" type="text" id="name" name="user_name" placeholder="  Nombre" required />
+            </li>
+            <li class="tu">
+                <input style="width: 340px;" type="email" id="mail" name="user_mail" placeholder="  Correo electrónico" required />
+            </li>          
         </ul>
         <ul class="contact">
-                <input type="Mensaje" id="mensa" name="Message" placeholder="  Mensaje" />
+            <li>
+                <input type="text" id="mensa" name="Message" placeholder="  Mensaje" required />
+            </li>
         </ul>
         <li class="button">
             <button type="submit">Enviar</button>
         </li>
-    </form> -->
+    </form>
 
 
-    <footer>
-        <div class="degradado2"></div>
-
-        <div class="redes">
-            <div class="red-box">
-                <a href="https://www.instagram.com/val__aguil/">
-                    <img class="red1" src="img/instagram.svg" alt="Icono de instagram">
-                </a>
+        <footer>
+            <div class="degradado2"></div>
+            <div class="redes">
+                <div class="red-box">
+                    <a href="https://www.instagram.com/val__aguil/">
+                        <img class="red1" src="img/instagram.svg" alt="Icono de instagram">
+                    </a>
+                </div>
+                <div class="red-box">
+                    <a href="https://github.com/Vaaal0">
+                        <img class="red2" src="img/github.svg" alt="Icono de GitHub">
+                    </a>
+                </div>
+                <div class="red-box">
+                    <a href="https://www.facebook.com/valaguil15">
+                        <img class="red3" src="img/facebook.svg" alt="Icono de Facebook">
+                    </a>
+                </div>
+                <div class="red-box">
+                    <a href="https://www.tiktok.com/@vaaal_aguil?_t=8jyUTWcZkqj&_r=1">
+                        <img class="red4" src="img/tiktok.svg" alt="Icono de Tiktok">
+                    </a>
+                </div>
             </div>
-            <div class="red-box">
-                <a href="https://github.com/Vaaal0">
-                    <img class="red2" src="img/github.svg" alt="Icono de GitHub">
-                </a>
-            </div>
-            <div class="red-box">
-                <a href="https://www.facebook.com/valaguil15">
-                    <img class="red3" src="img/facebook.svg" alt="Icono de Facebook">
-                </a>
-            </div>
-            <div class="red-box">
-                <a href="https://www.tiktok.com/@vaaal_aguil?_t=8jyUTWcZkqj&_r=1">
-                    <img class="red4" src="img/tiktok.svg" alt="Icono de Tiktok">
-                </a>
-            </div>
-        </div>
 
-    </footer>
+        </footer>
 
-    <script src="script.js"></script>
-    <script>
-        // Función para ajustar el tamaño de la letra
-        function adjustFontSize() {
-            var header = document.querySelector('header');
-            var windowWidth = window.innerWidth;
+        <script src="script.js"></script>
+        <script>
+            // Función para ajustar el tamaño de la letra
+            function adjustFontSize() {
+                var header = document.querySelector('header');
+                var windowWidth = window.innerWidth;
 
-            // Ajusta el tamaño de la letra según el ancho de pantalla
-            if (windowWidth < 768) {
-                header.style.fontSize = '16px';
-            } else if (windowWidth < 1200) {
-                header.style.fontSize = '20px';
-            } else {
-                header.style.fontSize = '24px';
+                // Ajusta el tamaño de la letra según el ancho de pantalla
+                if (windowWidth < 768) {
+                    header.style.fontSize = '16px';
+                } else if (windowWidth < 1200) {
+                    header.style.fontSize = '20px';
+                } else {
+                    header.style.fontSize = '24px';
+                }
             }
-        }
 
-        // Llama a la función cuando se carga la página
-        window.onload = adjustFontSize;
+            // Llama a la función cuando se carga la página
+            window.onload = adjustFontSize;
 
-        // Llama a la función cuando se redimensiona la ventana
-        window.onresize = adjustFontSize;
-    </script>
+            // Llama a la función cuando se redimensiona la ventana
+            window.onresize = adjustFontSize;
+        </script>
 </body>
 
 </html>
