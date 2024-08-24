@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff3b89;
+    background-image: linear-gradient(147deg, #ff3bce 10%, #5938fd 100%);
+    min-height: 100vh;
+    font-family: "Fira Sans", sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    margin: 0; /* Remove default margin */
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+img {
+    width: 30%;
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.box-image {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the image */
+    width: 100%; /* Take full width */
+}
+/* Estilos para la galería y los pop-ups */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 10%;
+    height: auto;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 80%;
+}

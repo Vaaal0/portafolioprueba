@@ -36,6 +36,8 @@
 
         <img class="perfil-img" src="img/Val.png" alt="Foto de perfil">
 
+
+
         <div class="about" id="about">
             <h1 style="color: #22208C; font-size: 40px;">Acerca</h1>
             <p style="color: #3B3A3A; font-size: 32px;">
@@ -59,42 +61,27 @@
         <div class="contenedor-imagenes">
             <div class="contenedor-img">
                 <a href="coloreos.html">
-                    <img src="img/shoto.png" alt="Descripción de la imagen">
+                    <img src="img/shoto.png" alt="Shoto">
                 </a>
                 <p class="sub">Coloreos</p>
             </div>
             <div class="contenedor-img">
                 <a href="acuarelas.html">
-                    <img src="img/corazón.jpg" alt="Descripción de la imagen">
+                    <img src="img/corazón.jpg" alt="Acuarela">
                 </a>
-                <p class="sub">Acuarelas</p>
+                <p class="sub">Acuarelas y dibujos</p>
             </div>
             <div class="contenedor-img">
-                <img class="foto3" src="img/Nanami.jpg" alt="Nanami">
-                <p class="sub">Nanami</p>
+                <a href="acuarelas.html">
+                    <img src="img/Nanami.jpg" alt="Descripción de la imagen">
+                </a>
+                <p class="sub">Ejes</p>
             </div>
             <div class="contenedor-img">
-                <img class="foto4" src="img/Hands.jpg" alt="Colores">
-                <p class="sub">Touch</p>
-            </div>
-        </div>
-
-        <div class="contenedor-imagenes">
-            <div class="contenedor-img">
-                <img class="foto5" src="img/Mar.jpg" alt="Mar">
-                <p class="sub">Mar</p>
-            </div>
-            <div class="contenedor-img">
-                <img class="foto6" src="img/Eye.jpg" alt="ojo">
-                <p class="sub">Purple</p>
-            </div>
-            <div class="contenedor-img">
-                <img class="foto7" src="img/Girl.jpg" alt="Chica">
-                <p class="sub">Iconic</p>
-            </div>
-            <div class="contenedor-img">
-                <img class="foto8" src="img/Playa.jpg" alt="Playa">
-                <p class="sub">Playa</p>
+                <a href="acuarelas.html">
+                    <img src="img/Hands.jpg" alt="Descripción de la imagen">
+                </a>
+                <p class="sub">Fotos</p>
             </div>
         </div>
     </div>
@@ -111,8 +98,9 @@
                 <input style="width: 340px;" type="text" id="name" name="user_name" placeholder="  Nombre" required />
             </li>
             <li class="tu">
-                <input style="width: 340px;" type="email" id="mail" name="user_mail" placeholder="  Correo electrónico" required />
-            </li>          
+                <input style="width: 340px;" type="email" id="mail" name="user_mail" placeholder="  Correo electrónico"
+                    required />
+            </li>
         </ul>
         <ul class="contact">
             <li>
@@ -125,56 +113,56 @@
     </form>
 
 
-        <footer>
-            <div class="degradado2"></div>
-            <div class="redes">
-                <div class="red-box">
-                    <a href="https://www.instagram.com/val__aguil/">
-                        <img class="red1" src="img/instagram.svg" alt="Icono de instagram">
-                    </a>
-                </div>
-                <div class="red-box">
-                    <a href="https://github.com/Vaaal0">
-                        <img class="red2" src="img/github.svg" alt="Icono de GitHub">
-                    </a>
-                </div>
-                <div class="red-box">
-                    <a href="https://www.facebook.com/valaguil15">
-                        <img class="red3" src="img/facebook.svg" alt="Icono de Facebook">
-                    </a>
-                </div>
-                <div class="red-box">
-                    <a href="https://www.tiktok.com/@vaaal_aguil?_t=8jyUTWcZkqj&_r=1">
-                        <img class="red4" src="img/tiktok.svg" alt="Icono de Tiktok">
-                    </a>
-                </div>
+    <footer>
+        <div class="degradado2"></div>
+        <div class="redes">
+            <div class="red-box">
+                <a href="https://www.instagram.com/val__aguil/">
+                    <img class="red1" src="img/instagram.svg" alt="Icono de instagram">
+                </a>
             </div>
+            <div class="red-box">
+                <a href="https://github.com/Vaaal0">
+                    <img class="red2" src="img/github.svg" alt="Icono de GitHub">
+                </a>
+            </div>
+            <div class="red-box">
+                <a href="https://www.facebook.com/valaguil15">
+                    <img class="red3" src="img/facebook.svg" alt="Icono de Facebook">
+                </a>
+            </div>
+            <div class="red-box">
+                <a href="https://www.tiktok.com/@vaaal_aguil?_t=8jyUTWcZkqj&_r=1">
+                    <img class="red4" src="img/tiktok.svg" alt="Icono de Tiktok">
+                </a>
+            </div>
+        </div>
 
-        </footer>
+    </footer>
 
-        <script src="script.js"></script>
-        <script>
-            // Función para ajustar el tamaño de la letra
-            function adjustFontSize() {
-                var header = document.querySelector('header');
-                var windowWidth = window.innerWidth;
+    <script src="js/script.js"></script>
+    <script>
+        // Función para ajustar el tamaño de la letra
+        function adjustFontSize() {
+            var header = document.querySelector('header');
+            var windowWidth = window.innerWidth;
 
-                // Ajusta el tamaño de la letra según el ancho de pantalla
-                if (windowWidth < 768) {
-                    header.style.fontSize = '16px';
-                } else if (windowWidth < 1200) {
-                    header.style.fontSize = '20px';
-                } else {
-                    header.style.fontSize = '24px';
-                }
+            // Ajusta el tamaño de la letra según el ancho de pantalla
+            if (windowWidth < 768) {
+                header.style.fontSize = '16px';
+            } else if (windowWidth < 1200) {
+                header.style.fontSize = '20px';
+            } else {
+                header.style.fontSize = '24px';
             }
+        }
 
-            // Llama a la función cuando se carga la página
-            window.onload = adjustFontSize;
+        // Llama a la función cuando se carga la página
+        window.onload = adjustFontSize;
 
-            // Llama a la función cuando se redimensiona la ventana
-            window.onresize = adjustFontSize;
-        </script>
+        // Llama a la función cuando se redimensiona la ventana
+        window.onresize = adjustFontSize;
+    </script>
 </body>
 
 </html>
